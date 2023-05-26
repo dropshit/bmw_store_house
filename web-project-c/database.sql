@@ -101,4 +101,3 @@ CREATE TABLE `adminlogin` (
 
 INSERT INTO `adminlogin` (`username`, `password`) VALUES
 ('admin','adminadmin') 
---$2y$10$MKKFMcGYRzObOXIJQrJYM.QnaJ8xj8r8X0NTcVYXDaaNkADijWnga

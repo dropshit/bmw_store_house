@@ -185,7 +185,7 @@ if (!isset($_SESSION['last_count_increase']) || time() - $_SESSION['last_count_i
         <section class="centeralize featured">
             <h2 class="title">Featured Cars</h2>
             <div class="featuredCars">
-                <a href="#" class="carCard">
+              <!--  <a href="#" class="carCard">
                     <div class="img">
                         <img src="./assets/images/bmw-1.jpg" alt="BMW">
                         <div class="price">380 <span class="currency">$</span></div>
@@ -202,7 +202,7 @@ if (!isset($_SESSION['last_count_increase']) || time() - $_SESSION['last_count_i
                             <div class="infoItem"><i class="fa-solid fa-gear"></i> Blue</div>
                         </div>
                     </div>
-                </a>
+                </a> -->
                 <?php
                 include "controller/database.php";
                 $sql = "SELECT * FROM carsinfo LIMIT 9";
