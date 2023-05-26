@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400&display=block");
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.sectionx {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.centeralize {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mySwiper {
+  display: none;
+}
+.mySwiper .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(22, 22, 22, 0.337254902);
+  right: var(--swiper-navigation-sides-offset, 0px);
+}
+.mySwiper .swiper-button-next::after {
+  content: none;
+}
+.mySwiper .swiper-button-next i {
+  color: white;
+  font-size: 24px;
+}
+.mySwiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(22, 22, 22, 0.337254902);
+  left: var(--swiper-navigation-sides-offset, 0px);
+}
+.mySwiper .swiper-button-prev::after {
+  content: none;
+}
+.mySwiper .swiper-button-prev i {
+  color: white;
+  font-size: 24px;
+}
+.mySwiper .swiper-slide {
+  height: calc(100vh - 151px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mySwiper .swiper-slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(240, 21, 32, 0.3019607843);
+}
+.mySwiper .swiper-slide .title {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.mySwiper .swiper-slide .subtitle {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.mySwiper .swiper-slide .btn {
+  display: block;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f0151f;
+  border: 2px solid #f0151f;
+  border-radius: 2px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+.mySwiper .swiper-slide .btn p {
+  z-index: 1;
+  color: white;
+  position: relative;
+  transition: 0.4s;
+  margin: 0;
+}
+.mySwiper .swiper-slide .btn:active, .mySwiper .swiper-slide .btn:visited {
+  color: white;
+}
+.mySwiper .swiper-slide .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  background-color: #f0151f;
+  transition: 0.5s;
+}
+.mySwiper .swiper-slide .btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: #f0151f;
+  transition: 0.5s;
+}
+.mySwiper .swiper-slide .btn:hover p {
+  color: #f0151f;
+}
+.mySwiper .swiper-slide .btn:hover::before {
+  width: 0;
+}
+.mySwiper .swiper-slide .btn:hover::after {
+  width: 0;
+}
+.mySwiper .swiper-slide.slide1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./../images/hero4.jpg");
+}
+.mySwiper .swiper-slide.slide2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./../images/hero5.jpg");
+}
+.mySwiper .swiper-slide.slide3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./../images/hero2.jpg");
+}
+
+.filter {
+  padding: 30px 15px;
+  margin: 0 auto;
+}
+.filter .container .filterForm {
+  display: none;
+  display: grid;
+  grid-template-columns: repeat(3, calc(33% - 20px));
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 15px;
+}
+.filter .container .filterForm .selectFilter {
+  padding: 10px 5px;
+  outline: none;
+  font-size: 15px;
+  color: #636363;
+  border: 1px solid #c5c5c5;
+}
+.filter .container .filterForm .findBtn {
+  padding: 10px 5px;
+  cursor: pointer;
+  background-color: #F0151F;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.filter .container .filterForm .findBtn:hover {
+  background-color: #d41019;
+}
+
+.featured {
+  padding: 60px 15px 60px 15px;
+}
+.featured .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  color: #161616;
+}
+.featured .featuredCars {
+  display: grid;
+  grid-template-columns: repeat(3, 31.4%);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 40px;
+}
+.featured .featuredCars .carCard {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transform: translateY(0px);
+  transition: 0.3s;
+  overflow: hidden;
+  text-decoration-line: none;
+}
+.featured .featuredCars .carCard .img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.featured .featuredCars .carCard .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured .featuredCars .carCard .img .price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  text-shadow: -0.5px 2px 2px rgb(49, 49, 49);
+}
+.featured .featuredCars .carCard .img .price .currency {
+  color: #f0151f;
+}
+.featured .featuredCars .carCard .info {
+  padding: 20px 15px;
+}
+.featured .featuredCars .carCard .info .carName {
+  color: #f0151f;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.featured .featuredCars .carCard .info .location {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #161616;
+}
+.featured .featuredCars .carCard .info .location i {
+  color: #636363;
+  margin-right: 2px;
+}
+.featured .featuredCars .carCard .info .infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 15px;
+}
+.featured .featuredCars .carCard .info .infoGrid .infoItem {
+  font-size: 15px;
+  font-weight: 400;
+  color: #161616;
+}
+.featured .featuredCars .carCard .info .infoGrid .infoItem i {
+  color: #f0151f;
+  margin-right: 2px;
+}
+.featured .featuredCars .carCard:hover {
+  transform: translateY(-5px);
+}
+
+.advantages {
+  padding: 60px 15px 60px 15px;
+  background-color: #f9f9f8;
+}
+.advantages .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  color: #161616;
+}
+.advantages .content {
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 25px));
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 30px;
+}
+.advantages .content .advantageItem {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+.advantages .content .advantageItem .cont {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 25px 20px;
+  z-index: 2;
+}
+.advantages .content .advantageItem .cont i {
+  font-size: 45px;
+  color: #F0151F;
+  margin-bottom: 25px;
+}
+.advantages .content .advantageItem .cont .title {
+  color: #F0151F;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.advantages .content .advantageItem .cont .text {
+  font-size: 16px;
+  color: #636363;
+  line-height: 28px;
+}
+.advantages .content .advantageItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 30px;
+  bottom: 0;
+  top: 30px;
+  background-color: #F0151F;
+  border-radius: 8px;
+  transition: 0.3s;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+.advantages .content .advantageItem:hover::before {
+  transform: rotate(8deg);
+}
+
+.agents {
+  padding: 60px 15px 60px 15px;
+  background-color: #f9f9f8;
+}
+.agents .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  color: #161616;
+}
+.agents .content {
+  display: grid;
+  grid-template-columns: repeat(4, 23.6%);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 25px;
+}
+.agents .content .agent {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  transform: translateY(0px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.agents .content .agent .img {
+  width: 100%;
+  height: 300px;
+}
+.agents .content .agent .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.agents .content .agent .info {
+  text-align: center;
+  padding: 25px 10px;
+}
+.agents .content .agent .info .name {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #161616;
+}
+.agents .content .agent .info .position {
+  font-size: 15px;
+  font-weight: 400;
+  color: #161616;
+}
+.agents .content .agent:hover {
+  transform: translateY(-5px);
+}
+
+.questions {
+  padding: 35px 15px;
+  background-color: #f0151f;
+}
+.questions .centeralize {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questions .centeralize .title {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.questions .centeralize .btn {
+  color: #f0151f;
+  background-color: white;
+  border-radius: 3px;
+  display: block;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.questions .centeralize .btn:active, .questions .centeralize .btn:visited {
+  color: #f0151f;
+}
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer a {
+  text-decoration-line: none;
+}
+
+@media screen and (max-width: 991px) {
+  .filter .container .filterForm {
+    grid-template-columns: repeat(2, calc(50% - 25px));
+  }
+  .featured .featuredCars {
+    grid-template-columns: repeat(2, 47.8%);
+  }
+  .advantages .content {
+    grid-template-columns: repeat(2, calc(52% - 25px));
+  }
+  .agents .content {
+    grid-template-columns: repeat(2, 48.4%);
+  }
+  .agents .content .agent .img {
+    height: 350px;
+  }
+  .agents .content .agent .img img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 556px) {
+  .featured .featuredCars {
+    grid-template-columns: 100%;
+  }
+  .advantages .content {
+    grid-template-columns: 100%;
+  }
+  .advantages .content .advantageItem:hover::before {
+    transform: rotate(5deg);
+  }
+  .agents .content {
+    grid-template-columns: 100%;
+  }
+  .questions .centeralize {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .filter .container .filterForm {
+    grid-template-columns: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

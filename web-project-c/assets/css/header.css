@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=block");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 100%;
+}
+
+img {
+  display: block;
+}
+
+.sectionx {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar {
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d47a9;
+  position: relative;
+}
+.navbar .top .info {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.navbar .top .info .item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  z-index: 1;
+}
+.navbar .top .info .item i {
+  font-size: 15px;
+}
+.navbar .top .info .item:visited, .navbar .top .info .item:active {
+  color: white;
+}
+.navbar .top .info .item .text {
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+.navbar .top .info:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 490px;
+  background-color: #f0151f;
+}
+.navbar .top .functions {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.navbar .top .functions .item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding: 6px 12px;
+  transition: 0.1s;
+  text-decoration: none;
+}
+.navbar .top .functions .item:visited, .navbar .top .functions .item:active {
+  color: white;
+}
+.navbar .top .functions .item:hover {
+  background-color: #f0151f;
+  box-shadow: none;
+}
+.navbar .top .functions .item i {
+  font-size: 15px;
+}
+.navbar .top .functions .item .text {
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar .bottom {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.navbar .bottom .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .bottom .logo {
+  font-size: 38px;
+}
+.navbar .bottom .rightPart {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.navbar .bottom .rightPart .menu {
+  display: flex;
+  align-items: center;
+}
+.navbar .bottom .rightPart .menu .menuItem {
+  color: #161616;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  padding: 42px 20px 35px;
+  position: relative;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.navbar .bottom .rightPart .menu .menuItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #f0151f;
+  opacity: 0;
+  transition: 0.3s;
+}
+.navbar .bottom .rightPart .menu .menuItem.current, .navbar .bottom .rightPart .menu .menuItem:hover {
+  color: #f0151f;
+}
+.navbar .bottom .rightPart .menu .menuItem.current::after, .navbar .bottom .rightPart .menu .menuItem:hover::after {
+  opacity: 1;
+}
+.navbar .bottom .rightPart .menu .menuItem:visited, .navbar .bottom .rightPart .menu .menuItem:active {
+  color: #161616;
+}
+.navbar .bottom .rightPart .contact {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.navbar .bottom .rightPart .contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0151f;
+}
+.navbar .bottom .rightPart .contact .img {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d47a9;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 15px;
+}
+.navbar .bottom .rightPart .contact .img i {
+  font-size: 20px;
+  color: white;
+}
+.navbar .bottom .rightPart .contact .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.navbar .bottom .rightPart .contact .text .topText {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+}
+.navbar .bottom .rightPart .contact .text .bottomText {
+  font-size: 18px;
+  font-size: 600;
+  color: white;
+  font-family: Verdana, sans-serif;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar .bottom .rightPart .contact {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

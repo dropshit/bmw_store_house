@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap'); 
+/*font-family: 'Raleway', sans-serif;*/
+
+.log-reg-left-side {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0.04) url('../images/bmw-5.jpg') top left repeat;
+    z-index: 999;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 15px;
+}
+
+.log-reg-left-side::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(33 9 90 / 55%);
+}
+
+.log-reg .info{
+    min-width: 500px;
+    padding: 10px 30px;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    transform: translateY(38vh);
+    
+}
+
+.log-reg .info h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7vh;
+}
+
+.log-reg .info a {
+    color: rgba(248, 38, 38, 0.858);
+    text-decoration: solid;
+}
+
+.log-reg .info p{
+    color: white;
+    font-size: 2.5vh;
+    font-weight: normal;
+}
+
+.log-reg .form-section{
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    background: #fff7f7;
+    z-index: 999;
+}
+
+.log-reg .form-inner {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+    overflow: hidden;
+    transition: all 0.5s;
+    transition: all 0.9s;
+    z-index: 1;
+}
+
+.log-reg .form-section img{
+    margin-bottom: 5px;
+    height: 45px;
+}
+.log-reg .form-section h3{
+    margin: 0 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.log-reg .form-section .form-group {
+    margin-bottom: 25px;
+}
+
+.log-reg .form-section .form-control {
+    padding: 10px 20px;
+    font-size: 15px;
+    height: 55px;
+    outline: none;
+    color: #616161;
+    border-radius: 3px;
+    border: 1px solid #efeded;
+    background: #efeded;
+}
+
+.log-reg .form-section .log-reg-btn {
+    cursor: pointer;
+    padding: 16px 30px 15px 30px;
+    height: 55px;
+    font-family: 'Raleway', sans-serif;
+    background: #f0151f;
+    border: solid 1px#f0151f;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.log-reg .form-section .log-reg-btn:hover {
+    background: #cc030d;
+    border: solid 1px #cc030d;
+    transition: all 0.6s;
+}
+
+.log-reg .form-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.log-reg .form-section .register-here {
+    margin-left: 4px;
+}
+
+.log-reg .form-section p a {
+    color: #f0151f;
+    text-decoration: none;
+}
+
+.checkbox-theme label{
+    float: left;
+}
+
+.checkbox-theme a {
+    color: #f0151f;
+    text-decoration: none;
+}
