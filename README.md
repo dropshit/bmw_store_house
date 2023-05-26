@@ -6,9 +6,9 @@ Don't forget import database.sql file into phpmyadmin
 ## How to access to admin-panel
 localhost/web-project-c/admin/admin-log.php
 
-username:admin
+username: admin
 
-password:adminadmin
+password: adminadmin
 ## Contributors
 [@dropshit](https://github.com/dropshit)
 [@lshiroc](https://github.com/Lshiroc)
