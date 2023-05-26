@@ -5,7 +5,9 @@ Group Project for Web Programming 2
 Don't forget import database.sql file into phpmyadmin
 ## How to access to admin-panel
 localhost/web-project-c/admin/admin-log.php
+
 username:admin
+
 password:adminadmin
 ## Contributors
 [@dropshit](https://github.com/dropshit)
